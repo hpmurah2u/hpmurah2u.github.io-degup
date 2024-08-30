@@ -27,7 +27,7 @@ window.player = player;
 window.ui = ui; 
 player.addEventListener('error', onPlayerErrorEvent); 
 controls.addEventListener('error', onUIErrorEvent); 
-try{await player.load('https://unifi-live05.secureswiftcontent.com/UnifiHD/live17.mpd'); 
+try{await player.load('https://pop28clustera00de08172376d246317c.hypp.tv/PLTV/88888888/224/3221227923/3221227923.mpd?rrsip=web.hypp.tv:443&zoneoffset=0&servicetype=1&icpid=&accounttype=1&limitflux=-1&limitdur=-1&accountinfo=00m%2FA1gVngRZDLAcDG2%2BMWHgJ1pKvt1lRjGVuBjPOXv2AdOKWgIh5IEiDm%2FM0j6IudB5UNw2Xcw0r6wzw31U2vczsdIQekP94ljllKxT%2FsTJycHE0IqZBvG%2BXsudj34k%3A20240728232658%3AUTC%2C10001002674171%2C161.142.214.99%2C20240728232658%2Curn:Huawei:liveTV:XTV55631601%2C10001002674171%2C-1%2C0%2C1%2C%2C%2C2%2C88%2C%2C%2C2%2C10000105575216%2C0%2C10000104356656%2C4165497230%2C%2C%2C2%2C1%2CEND&GuardEncType=2&it=H4sIAAAAAAAAADWOTW_CMBiD_02OUdPP9JATaBISKpPouE5u8jarSBtICtL-_VpWfLT9WJ4DNB32qgJE3yeQdWbymkhCaupy6rJSFqKoWaR741XKNJwbJtt4s2KX8-5bJDzhaSp4Jli7zn042K3ZPMaOghJv7EzhOWhSJvb8ichhbSCLefAT_3T4_QpuqzBqt2uiSheVZZHXsmLz6raI1yVhP4g7P94QyBy9fQGqh4vEbtBXWGowkpoezv1zp2CWN39nMCum9AAAAA&tenantId=6001'); 
 console.log('The video has now been loaded!');} catch (error) {onPlayerError(error);}} 
 function onPlayerErrorEvent(errorEvent) {onPlayerError(event.detail);} 
 function onPlayerError(error) {console.error('Error code', error.code, 'object', error);} 
